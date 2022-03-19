@@ -13,12 +13,12 @@ export const Header = () => {
     <div
       className={clsx(
         'tw-h-12',
-        'tw-flex tw-justify-between tw-items-center',
+        'tw-flex tw-items-center tw-justify-between',
         'tw-px-4'
       )}
     >
-      <div className={clsx('tw-flex tw-justify-between tw-items-center')}></div>
-      <div className={clsx('tw-flex tw-justify-between tw-items-center')}>
+      <div className={clsx('tw-flex tw-items-center tw-justify-between')}></div>
+      <div className={clsx('tw-flex tw-items-center tw-justify-between')}>
         <MenuButton isOpen={isOpen} onClick={onClick} />
       </div>
     </div>
