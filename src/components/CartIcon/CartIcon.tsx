@@ -36,7 +36,6 @@ export const CartIcon = ({ size = 64 }: CartIconProps) => {
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    console.log(cartCount.animating)
     if (cartCount.animating) {
       animationHandler()
     }
