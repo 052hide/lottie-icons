@@ -4,9 +4,8 @@ import { useEffect } from 'react'
 
 import type { MenuButtonProps } from './type'
 
-import animationData from '@/icons/Menu/data.json'
-
 import { FRAME, SIZE } from './const'
+import animationData from './menuAnimationData.json'
 
 export const MenuButton = ({ isOpen, onClick }: MenuButtonProps) => {
   const options: LottieOptions = {
