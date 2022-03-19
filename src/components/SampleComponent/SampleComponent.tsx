@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import { FavoriteButton } from '@/components/FavoriteButton'
 
 export const SampleComponent = () => {
