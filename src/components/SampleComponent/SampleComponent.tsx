@@ -1,14 +1,12 @@
-import animationData from '@/icons/BlueBalloon/data.json'
-import { useLottie } from 'lottie-react'
+import { useState } from 'react'
+import { FavoriteButton } from '@/components/FavoriteButton'
 
 export const SampleComponent = () => {
-  const options = {
-    animationData,
-    loop: true,
-    autoplay: true,
-  }
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  const { View } = useLottie(options)
-
-  return <div>{View}</div>
+  return (
+    <div>
+      <FavoriteButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
+    </div>
+  )
 }
