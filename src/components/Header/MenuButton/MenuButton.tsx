@@ -22,7 +22,7 @@ export const MenuButton = ({ isOpen, onClick }: MenuButtonProps) => {
 
   useEffect(() => {
     goToAndStop(isOpen ? FRAME.from : FRAME.to)
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const onClickHandler = () => {
     playSegments(

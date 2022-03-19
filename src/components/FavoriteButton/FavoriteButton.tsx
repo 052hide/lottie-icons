@@ -23,7 +23,7 @@ export const FavoriteButton = ({ isOpen, onClick }: FavoriteButtonProps) => {
 
   useEffect(() => {
     goToAndStop(isOpen ? FRAME.from : FRAME.to)
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const onClickHandler = () => {
     if (!isOpen) {
