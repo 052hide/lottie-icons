@@ -1,4 +1,4 @@
-import { atom, selector, useRecoilState } from 'recoil'
+import { atom, useRecoilState } from 'recoil'
 
 import { KEYS } from './key'
 
