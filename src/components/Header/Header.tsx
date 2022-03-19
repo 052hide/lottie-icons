@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import { useState } from 'react'
+
 import { MenuButton } from './MenuButton'
 
 export const Header = () => {

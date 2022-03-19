@@ -1,8 +1,11 @@
 import clsx from 'clsx'
-import { useEffect } from 'react'
-import animationData from '@/icons/Menu/data.json'
 import { type LottieOptions, useLottie } from 'lottie-react'
+import { useEffect } from 'react'
+
 import type { MenuButtonProps } from './type'
+
+import animationData from '@/icons/Menu/data.json'
+
 import { FRAME, SIZE } from './const'
 
 export const MenuButton = ({ isOpen, onClick }: MenuButtonProps) => {

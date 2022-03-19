@@ -1,8 +1,11 @@
 import clsx from 'clsx'
-import { useEffect } from 'react'
-import animationData from '@/icons/Favorite/data.json'
 import { type LottieOptions, useLottie } from 'lottie-react'
+import { useEffect } from 'react'
+
 import type { FavoriteButtonProps } from './type'
+
+import animationData from '@/icons/Favorite/data.json'
+
 import { FRAME, SIZE } from './const'
 import { FavoriteFalseIcon } from './FavoriteFalseIcon'
 
