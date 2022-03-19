@@ -5,19 +5,18 @@ import { type LottieOptions, useLottie } from 'lottie-react'
 import type { MenuButtonProps } from './type'
 import { FRAME, SIZE } from './const'
 
-
-export const MenuButton = ({isOpen, onClick}: MenuButtonProps) => {
+export const MenuButton = ({ isOpen, onClick }: MenuButtonProps) => {
   const options: LottieOptions = {
     animationData,
     loop: false,
     autoplay: false,
     style: {
       width: SIZE,
-      height: SIZE
-    }
+      height: SIZE,
+    },
   }
 
-  const { View, goToAndStop,playSegments } = useLottie(options)
+  const { View, goToAndStop, playSegments } = useLottie(options)
 
   useEffect(() => {
     goToAndStop(isOpen ? FRAME.from : FRAME.to)
@@ -25,9 +24,8 @@ export const MenuButton = ({isOpen, onClick}: MenuButtonProps) => {
 
   const onClickHandler = () => {
     playSegments(
-      !isOpen
-        ? [FRAME.from, FRAME.to]
-        : [FRAME.to,FRAME.from], true
+      !isOpen ? [FRAME.from, FRAME.to] : [FRAME.to, FRAME.from],
+      true
     )
     onClick()
   }
@@ -38,17 +36,19 @@ export const MenuButton = ({isOpen, onClick}: MenuButtonProps) => {
         className={clsx('tw-relative', 'tw-overflow-hidden')}
         style={{
           width: `${SIZE / 2}px`,
-          height: `${SIZE / 2}px`
+          height: `${SIZE / 2}px`,
         }}
       >
         <div
           className={clsx('tw-absolute')}
           style={{
-            top: `${SIZE / 4 * -1}px`,
-            left: `${SIZE / 4 * -1}px`
+            top: `${(SIZE / 4) * -1}px`,
+            left: `${(SIZE / 4) * -1}px`,
           }}
-        >{View}</div>
+        >
+          {View}
+        </div>
       </div>
-  </button>
+    </button>
   )
 }
