@@ -4,9 +4,8 @@ import { useEffect } from 'react'
 
 import type { FavoriteButtonProps } from './type'
 
-import animationData from '@/icons/Favorite/data.json'
-
 import { FRAME, SIZE } from './const'
+import animationData from './favoriteAnimationData.json'
 import { FavoriteFalseIcon } from './FavoriteFalseIcon'
 
 export const FavoriteButton = ({ isOpen, onClick }: FavoriteButtonProps) => {
