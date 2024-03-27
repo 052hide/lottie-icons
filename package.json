@@ -16,8 +16,8 @@
   "dependencies": {
     "clsx": "1.1.1",
     "lottie-react": "2.2.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-router-dom": "^6.2.2",
     "recoil": "^0.6.1"
   },
@@ -29,8 +29,8 @@
     "@storybook/addon-postcss": "2.0.0",
     "@storybook/react": "6.4.19",
     "@storybook/testing-library": "0.0.9",
-    "@types/react": "17.0.41",
-    "@types/react-dom": "17.0.14",
+    "@types/react": "18.2.73",
+    "@types/react-dom": "18.2.22",
     "@types/react-lottie": "1.2.6",
     "@typescript-eslint/eslint-plugin": "5.15.0",
     "@typescript-eslint/parser": "5.15.0",
